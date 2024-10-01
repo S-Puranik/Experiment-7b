@@ -1,20 +1,21 @@
 #include <iostream>
 using namespace std;
 
-void func(int x,int y){
-    int result = 0;
+void power(int x, int y){
+    int result = 1;
     for(int i=1; i<=y; i++){
-        result += x*x;
+        result *= x;
     }
-    cout<< "X^Y is: "<< result;
+    cout << "X^Y is: " << result << endl;
 }
+
 int main(){
     int x,y;
-    cout<< "Enter the value of x and y to get x^y: "<< endl;
-    cout << "x: ";
+    cout << "Enter the value of X and Y to get X^Y" << endl;
+    cout << "X: ";
     cin >> x;
-    cout << "y: ";
+    cout << "Y: ";
     cin >> y;
-    func(x,y);
-return 0;
+    power(x,y);
+    return 0;
 }
